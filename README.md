@@ -10,3 +10,13 @@ Access the Flask app by navigating to http://localhost:5000 in your web browser.
 for deploying a simple web application. This playbook will handle tasks such as installing dependencies, copying application files, and starting the application using a service like systemd.deploy_app.yml
 # Kubernetes deployment script to deploy a simple Nginx using AWS EKS
 An example of a Kubernetes deployment script to deploy a simple Nginx application on a Kubernetes cluster running in AWS using Amazon Elastic Kubernetes Service (EKS). This script assumes that you have already set up an EKS cluster using tools like eksctl or Terraform.
+# Deployment steps:
+  # Create the Nginx Deployment
+kubectl apply -f nginx-deployment.yaml
+  # Create the Nginx Service
+kubectl apply -f nginx-service.yaml
+  # Check the Deployment and Service
+kubectl get deployments
+kubectl get services
+ # Access the application
+kubectl get service nginx-service 
