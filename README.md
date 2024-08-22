@@ -5,3 +5,6 @@ Create the docker-compose.yml file in the root of your project.
 Create a simple Flask app (e.g., app.py) and a requirements.txt file with the required dependencies.
 Run: docker-compose up
 Access the Flask app by navigating to http://localhost:5000 in your web browser.
+
+# Deployment example using ansible playbook:
+for deploying a simple web application. This playbook will handle tasks such as installing dependencies, copying application files, and starting the application using a service like systemd.deploy_app.yml
